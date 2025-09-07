@@ -1,0 +1,280 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Анастасия Трухина} \\ \vspace{1pt}
+    \small +7-925-404-97-46 $|$ \href{mailto:x@x.com}{\underline{trukhina12345@mail.ru}} $|$
+    \href{https://github.com/...}{\underline{github.com/NT-005-TN}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Московский технический университет связи и информатки}{Москва}
+      {Бакалавриат. Программная инженерия: Разработка и сопровождение программного обеспечения.}{2024 -- 2028}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Опыт работы}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+  {Android-разработчик (фриланс)}{Июнь 2025 -- Сентябрь 2025}
+  {}{Удаленный формат}
+  \resumeItemListStart
+    \resumeItem{Реализация архитектуры экранов приложения с использованием паттерна Model-View-Presenter (MVP) для обеспечения четкого разделения логики и пользовательского интерфейса.}
+    \resumeItem{Разработка асинхронного взаимодействия с сетью и базами данных с применением Kotlin Coroutines, предотвращая блокировку UI-потока и обеспечивая отзывчивость приложения.}
+    \resumeItem{Интеграция локального хранилища данных через библиотеку Room Persistence Library (SQLite) с автоматической генерацией Data Access Objects (DAO) для типобезопасных операций с сущностями.}
+    \resumeItem{Интеграция облачных сервисов Firebase (Authentication, Cloud Firestore) для реализации аутентификации пользователей и синхронизации данных в реальном времени.}
+    \resumeItem{Внедрение системы автоматического управления зависимостями и жизненным циклом компонентов с использованием Dagger Hilt, что повысило модульность и тестируемость кода.}
+    \resumeItem{Автоматизация процессов парсинга JSON-данных от внешнего REST API (NHTSA) с помощью библиотеки Moshi, обеспечивая эффективное преобразование сетевых ответов в объекты Kotlin.}
+    \resumeItem{Реализация пользовательского интерфейса с применением ViewBinding для автоматической генерации типобезопасных ссылок на элементы макета, ускоряя разработку и снижая вероятность ошибок.}
+  \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Проекты}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Автомобильный менеджер} $|$ \\ \emph{Kotlin, Android SDK, Firebase, Room, Moshi, Coroutines, Hilt}}{}
+      \resumeItemListStart
+        \resumeItem{Разработано нативное Android-приложение с архитектурой MVP для управления личным автопарком пользователя.}
+        \resumeItem{Реализована аутентификация и регистрация пользователей с помощью Firebase Authentication и синхронизация профилей через Cloud Firestore.}
+        \resumeItem{Обеспечено надежное локальное хранение данных об автомобилях с использованием библиотеки Room (SQLite) с автоматической синхронизацией с облаком Firestore.}
+        \resumeItem{Интегрировано внешнее REST API (NHTSA) для автоматического декодирования VIN-кодов, используя HttpUrlConnection и Moshi для парсинга JSON-ответов.}
+        \resumeItem{Применены Kotlin Coroutines для асинхронного выполнения сетевых запросов, операций с БД и управления состоянием UI без блокировки основного потока.}
+        \resumeItem{Внедрена система управления зависимостями и жизненным циклом компонентов с помощью Dagger Hilt, повысив модульность и тестируемость кода.}
+        \resumeItem{Создан интуитивный пользовательский интерфейс с возможностью добавления автомобилей как по VIN-коду, так и через ручной ввод данных.}
+        \resumeItem{\href{https://gitfront.io/r/NTr/X7ZAxurAcbvR/ctproject/  }{Ссылка на репозиторий с кодом проекта: \underline{gitfront.io/r/NTr/X7ZAxurAcbvR/ctproject/}}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Веб-сервис поиска Wikipedia} $|$ \\ \emph{Python, FastAPI, Uvicorn, Pydantic, Wikipedia-API}}{}
+      \resumeItemListStart
+        \resumeItem{Разработан асинхронный веб-сервис для поиска и получения информации из Wikipedia с использованием фреймворка FastAPI.}
+        \resumeItem{Реализован RESTful API с эндпоинтами для получения кратких сводок по темам, поиска статей и получения полной информации о статье.}
+        \resumeItem{Интегрирована внешняя библиотека Wikipedia-API для взаимодействия с REST API Википедии и выполнения поисковых запросов.}
+        \resumeItem{Применен Pydantic для определения строгих схем данных запросов и ответов, обеспечив автоматическую валидацию и документирование API.}
+        \resumeItem{Использован Uvicorn в качестве ASGI-сервера для запуска и развертывания приложения с поддержкой автоматической перезагрузки при разработке.}
+        \resumeItem{Автоматизирована генерация интерактивной документации API (Swagger UI, ReDoc) средствами FastAPI на основе определенных маршрутов и моделей.}
+        \resumeItem{Обработаны различные типы параметров HTTP-запросов: path-параметры (\texttt{/summary/\{topic\}}), query-параметры (\texttt{?q=search\_term}) и тело запроса (POST).}
+        \resumeItem{\href{https://github.com/NT-005-TN/FastAPI-using-wikipedia-for-ex  }{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/FastAPI-using-wikipedia-for-ex}}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Шуточный банковский веб-сайт "ФПЕ Банк"} $|$ \\ \emph{Python, Flask, Flask-Login, Pillow, JSON, Хэширование, HTML/CSS/JS}}{}
+      \resumeItemListStart
+        \resumeItem{Реализована веб-платформа-пародия на банковский сайт в рамках "первоапрельского хакатона" с сознательно ужасной архитектурой.}
+        \resumeItem{Использован микрофреймворк \texttt{Flask} как основа для веб-приложения. Управление сессиями пользователей (регистрация, вход, выход) реализовано с помощью библиотеки \texttt{Flask-Login}.}
+        \resumeItem{Вся пользовательская информация (имя, телефон, хэш пароля, баланс, номер карты, страна) хранится в едином JSON-файле (\texttt{data.json}) без использования полноценной СУБД.}
+        \resumeItem{Интегрирована сатирическая "админ-панель" с уникальной формой аутентификации: доступ осуществлялся путем загрузки изображения и побайтного сравнения \texttt{MD5}-хэшей изображений с использованием библиотеки \texttt{Pillow} (PIL).}
+        \resumeItem{Применена библиотека \texttt{Werkzeug} для безопасного хэширования паролей пользователей (\texttt{generate\_password\_hash}, \texttt{check\_password\_hash}).}
+        \resumeItem{Реализованы REST-like API endpoint'ы для управления пользовательскими данными: получение случайных средств, "казино" с заведомо проигрышной механикой, экспорт/импорт всей пользовательской базы данных администратором.}
+        \resumeItem{Создан пользовательский интерфейс с использованием \texttt{HTML/CSS/JS} и шаблонизатора \texttt{Jinja2}, включая элементы сатирического UX/UI (например, выбор страны через "колесо фортуны").}
+        \resumeItem{\href{https://github.com/NT-005-TN/The_worse_bank_website  }{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/The_worse_bank_website}}}
+      \resumeItemListEnd
+      
+      \resumeProjectHeading
+    {\textbf{Игра Крестики-Нолики (Tic Tac Toe)} $|$ \\ \emph{Java, Swing, AWT, Event Handling}}{}
+    \resumeItemListStart
+      \resumeItem{Разработано настольное графическое приложение "Крестики-Нолики" с использованием стандартной библиотеки Java Swing для создания пользовательского интерфейса.}
+      \resumeItem{Реализована игровая логика с чередованием ходов игроков (X и O) и проверкой условий победы (ряды, диагонали) после каждого хода.}
+      \resumeItem{Использована объектно-ориентированная модель событий AWT/Swing: зарегистрированы слушатели событий (\texttt{ActionListener}) для кнопок игрового поля и кнопки перезапуска.}
+      \resumeItem{Применены компоненты Swing: \texttt{JFrame} (главное окно), \texttt{JPanel} (контейнер для элементов), \texttt{JLabel} (отображение текущего игрока/результата), \texttt{JButton} (клетки поля и кнопка перезапуска).}
+      \resumeItem{Реализован алгоритм определения победителя путем анализа состояния всех кнопок игрового поля после каждого хода и сравнения комбинаций с выигрышными условиями.}
+      \resumeItem{Создан интуитивный пользовательский интерфейс с визуальной обратной связью: отображение текущего игрока, блокировка поля после победы или заполнения, кнопка перезапуска игры.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Portfolio/blob/main/Java_TicTacToe}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Portfolio/blob/main/Java_TicTacToe}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Телеграм-бот прогноза погоды} $|$ \\ \emph{Python, pyTelegramBotAPI, Requests, OpenWeatherMap API}}{}
+    \resumeItemListStart
+      \resumeItem{Разработан Telegram-бот для предоставления пользователю актуального прогноза погоды для любого города мира по запросу.}
+      \resumeItem{Интегрирован внешний API сервиса OpenWeatherMap для получения данных о погоде (температура, ощущается как, скорость ветра, состояние неба) по названию города.}
+      \resumeItem{Реализована обработка HTTP-запросов к REST API OpenWeatherMap с использованием библиотеки \texttt{requests} и парсинг JSON-ответа для извлечения необходимых meteorological данных.}
+      \resumeItem{Использована библиотека \texttt{pyTelegramBotAPI} (telebot) для создания обработчиков сообщений (\texttt{@bot.message\_handler}), управления состоянием бота и отправки ответов пользователю через Telegram API.}
+      \resumeItem{Обеспечена надежная работа бота в непрерывном режиме с использованием \texttt{bot.polling} и реализации базовой обработки исключений для предотвращения краха приложения.}
+      \resumeItem{Создан интуитивный пользовательский интерфейс бота: реализована команда \texttt{/start} для приветствия и инструкции пользователю, автоматическая обработка текстовых сообщений как названий городов.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Portfolio/tree/main/Python_Telegram_bot_weathersearcher}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Portfolio/tree/main/Python\_Telegram\_bot\_weathersearcher}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Игра "Убегающая кнопка" (Running Button)} $|$ \\ \emph{Java, Swing, AWT, Event Handling, Random}}{}
+    \resumeItemListStart
+      \resumeItem{Разработано настольное графическое приложение-игра "Убегающая кнопка" с использованием стандартной библиотеки Java Swing для создания динамического пользовательского интерфейса.}
+      \resumeItem{Реализована игровая механика, при которой кнопка случайным образом перемещается по игровому полю при каждом клике пользователя, изменяя свое положение и цвет.}
+      \resumeItem{Использована объектно-ориентированная модель событий AWT/Swing: зарегистрированы слушатели событий (\texttt{ActionListener}) для обработки кликов по кнопке.}
+      \resumeItem{Применены компоненты Swing: \texttt{JFrame} (главное окно), \texttt{JPanel} (контейнер для элементов с \texttt{null} layout для абсолютного позиционирования), \texttt{JButton} (основной игровой элемент).}
+      \resumeItem{Реализована генерация псевдослучайных чисел (\texttt{Math.random()}, \texttt{Random}) для определения новых координат кнопки, цвета и условий появления новых элементов.}
+      \resumeItem{Создана динамическая логика интерфейса: при достижении определенного счетчика кликов кнопка исчезает, а при четных значениях счетчика появляются новые кнопки, увеличивая сложность.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Portfolio/blob/main/RunningButton.java}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Portfolio/blob/main/RunningButton.java}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Графический калькулятор} $|$ \\ \emph{Java, Swing, AWT, Event Handling}}{}
+    \resumeItemListStart
+      \resumeItem{Разработано настольное графическое приложение калькулятор с использованием стандартной библиотеки Java Swing для создания пользовательского интерфейса.}
+    \resumeItem{Реализована логика арифметических операций (сложение, вычитание, умножение, деление) с вещественными числами, включая обработку последовательного ввода операндов и операторов.}
+    \resumeItem{Использована объектно-ориентированная модель событий AWT/Swing: зарегистрированы слушатели событий (\texttt{ActionListener}) для кнопок (цифры, операции, равно, очистка) и текстовых полей.}
+    \resumeItem{Применены компоненты Swing: \texttt{JFrame} (главное окно), \texttt{JPanel} (контейнер для элементов), \texttt{JTextField} (поля для ввода операндов и отображения результата), \texttt{JButton} (кнопки цифр, операций, управления), \texttt{JLabel} (статусное поле).}
+    \resumeItem{Реализована базовая валидация пользовательского ввода для предотвращения ошибок вычисления (пустые поля, некорректные символы).}
+    \resumeItem{Создан интуитивный пользовательский интерфейс с визуальной обратной связью: отдельные поля для операндов и оператора, кнопка очистки (\texttt{C}), отображение результата и сообщений об ошибках.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Portfolio/blob/main/Calc2.java}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Portfolio/blob/main/Calc2.java}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Телеграм-бот прогноза погоды} $|$ \\ \emph{Python, pyTelegramBotAPI, Requests, OpenWeatherMap API}}{}
+    \resumeItemListStart
+      \resumeItem{Разработан Telegram-бот для предоставления пользователю актуального прогноза погоды для любого города мира по запросу.}
+      \resumeItem{Интегрирован внешний API сервиса OpenWeatherMap для получения данных о погоде (температура, ощущается как, скорость ветра, состояние неба) по названию города.}
+      \resumeItem{Реализована обработка HTTP-запросов к REST API OpenWeatherMap с использованием библиотеки \texttt{requests} и парсинг JSON-ответа для извлечения необходимых meteorological данных.}
+      \resumeItem{Использована библиотека \texttt{pyTelegramBotAPI} (telebot) для создания обработчиков сообщений (\texttt{@bot.message\_handler}), управления состоянием бота и отправки ответов пользователю через Telegram API.}
+      \resumeItem{Обеспечена надежная работа бота в непрерывном режиме с использованием \texttt{bot.polling} и реализации базовой обработки исключений для предотвращения краха приложения.}
+      \resumeItem{Создан интуитивный пользовательский интерфейс бота: реализована команда \texttt{/start} для приветствия и инструкции пользователю, автоматическая обработка текстовых сообщений как названий городов.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Portfolio/blob/main/TelegramBot.py}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Portfolio/blob/main/TelegramBot.py}}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Игра "Жизнь" (Conway's Game of Life)} $|$ \\ \emph{Python, Pygame, ctypes}}{}
+    \resumeItemListStart
+      \resumeItem{Разработана визуализация клеточного автомата "Игра жизнь" Конвея с использованием библиотеки \texttt{Pygame} для создания графического интерфейса и анимации.}
+      \resumeItem{Реализована основная логика игры: автоматическое обновление состояния клеток на двумерной сетке в соответствии с правилами рождения, выживания и смерти, зависящими от количества соседей.}
+      \resumeItem{Использована библиотека \texttt{ctypes} для получения реального разрешения экрана монитора с учетом DPI, что позволяет динамически подстраивать размер игрового поля под конкретное устройство.}
+      \resumeItem{Применены компоненты \texttt{Pygame}: \texttt{pg.display.set\_mode} (создание окна), \texttt{pg.time.Clock} (управление частотой кадров FPS), \texttt{pg.event.get} (обработка событий закрытия окна), \texttt{pg.draw.line/rect} (рисование сетки и клеток).}
+      \resumeItem{Реализована оптимизация производительности: использование двойной буферизации (\texttt{field} и \texttt{new\_field}) и глубокое копирование (\texttt{copy.deepcopy}) для корректного обновления состояния сетки на каждом шаге симуляции.}
+      \resumeItem{Создан адаптивный пользовательский интерфейс: игровое поле автоматически масштабируется под разрешение экрана, отрисована сетка для визуального разделения клеток, черные прямоугольники представляют живые клетки.}
+      \resumeItem{\href{https://github.com/NT-005-TN/LifeGamePython}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/LifeGamePython}}}
+    \resumeItemListEnd
+
+
+  \resumeProjectHeading
+    {\textbf{Демонстрационный веб-сайт с формами авторизации/регистрации} $|$ \\ \emph{HTML, CSS, JavaScript, Google Fonts API}}{}
+    \resumeItemListStart
+      \resumeItem{Разработана статическая веб-страница с адаптивным пользовательским интерфейсом, демонстрирующая базовые формы входа и регистрации пользователя.}
+      \resumeItem{Использована семантическая разметка HTML для структурирования контента: элементы \texttt{header}, \texttt{nav}, \texttt{div}, \texttt{form}, \texttt{input}, \texttt{button}, \texttt{label}, \texttt{a}.}
+      \resumeItem{Применены современные возможности CSS3: Flexbox для выравнивания элементов, CSS Grid (косвенно, через Flex), псевдоклассы (\texttt{:hover}, \texttt{:focus}, \texttt{:valid}), анимации (\texttt{transition}, \texttt{transform}), медиазапросы, свойства фона (\texttt{background-size}, \texttt{background-position}), размытие (\texttt{backdrop-filter}) и тени (\texttt{box-shadow}).}
+      \resumeItem{Интегрирован внешний шрифт \texttt{Poppins} от Google Fonts API для улучшения визуальной привлекательности и типографики сайта.}
+      \resumeItem{Реализована интерактивность пользовательского интерфейса с помощью нативного JavaScript (ES6): переключение между формами входа/регистрации, открытие/закрытие модального окна форм, анимация переходов.}
+      \resumeItem{Создан адаптивный дизайн с плавными переходами и эффектами при наведении, обеспечивающий современный и интуитивно понятный пользовательский опыт.}
+      \resumeItem{\href{https://github.com/NT-005-TN/Site-Works_Successful}{Ссылка на репозиторий с кодом проекта: \underline{github.com/NT-005-TN/Site-Works\_Successful}}}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Технические навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \setlength{\itemsep}{4pt}
+    \small{\item{
+     \textbf{Languages}{: Java, Python, Kotlin, C/C++, SQL (Postgres, SQLite, Oracle), JavaScript, HTML/CSS, VBA} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI, Android SDK} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, PyCharm, IntelliJ IDEA, Eclipse, Android Studio, Hilt, Room, Firebase, Moshi, Coroutines, Gradle, Postman} \\
+     \textbf{Libraries}{: Pygame, Telebot, Requests,  Pydantic, OpenWeatherMap API, NHTSA API, Wikipedia-API, ctypes, fnmatch} \\
+     \textbf{Technologies \& Concepts}{: Object-Oriented Programming (OOP), REST APIs, MVC/MVP Architecture, Database Design (SQLite, Room, JSON, Oracle), Asynchronous Programming (Coroutines), Dependency Injection (Hilt), Mobile Development (Android), Web Development (HTML/CSS/JS, Flask, FastAPI), Git Version Control, Excel} \\
+     \textbf{Additional}{: Technical English (B2)}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
